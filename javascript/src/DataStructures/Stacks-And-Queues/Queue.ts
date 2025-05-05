@@ -3,6 +3,10 @@ type Item = string | number | object | boolean | null | undefined | symbol | big
 type Items = Item[];
 
 class Queue {
+  constructor() {
+    this.items = [];
+  }
+  
   items: Items;
 
   add(item: Item) {
