@@ -1,4 +1,4 @@
-import Stack from '@code/Stacks-And-Queues/Stack';
+import Stack from '@code/Stacks-and-Queues/Stack';
 
 describe('Stack', () => {
   let stack: Stack;

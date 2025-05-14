@@ -1,4 +1,4 @@
-import oneAway from "@code/Arrays-And-Strings/OneAway"
+import oneAway from "@code/Arrays-and-Strings/OneAway"
 
 test("strings are one change away", () => {
     expect(oneAway('pale', 'ple')).toEqual(true);

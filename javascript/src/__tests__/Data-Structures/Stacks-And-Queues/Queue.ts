@@ -1,4 +1,4 @@
-import Queue from "@code/Stacks-And-Queues/Queue"
+import Queue from "@code/Stacks-and-Queues/Queue"
 
 describe('Queue', () => {
   let queue: Queue;

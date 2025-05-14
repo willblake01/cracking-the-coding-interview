@@ -1,4 +1,4 @@
-import isUnique from '../../DataStructures/Arrays-And-Strings/IsUnique';
+import isUnique from '@code/Arrays-and-Strings/IsUnique';
 
 describe('isUnique', () => {
     it('should return true for an empty string', () => {

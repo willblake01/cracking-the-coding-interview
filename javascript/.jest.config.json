@@ -2,7 +2,7 @@
     "clearMocks": true,
     "moduleNameMapper": {
         "@code/(.*)": [
-            "<rootDir>/src/DataStructures/$1"
+            "<rootDir>/src/Data-Structures/$1"
         ]
     },
     "preset": "ts-jest"
