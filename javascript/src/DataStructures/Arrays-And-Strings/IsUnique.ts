@@ -17,11 +17,11 @@ const isUnique = (str: string) => {
     if (result[str[i]] === undefined) {
       result[str[i]] = 1
     } else {
-      result[str[i]] = (result[str[i]] as number) + 1
+      result[str[i]] = (result[str[i]] as number) ++
       result.hasUniqueChars = false
     }
   }
-  
+
   return result.hasUniqueChars
 }
 
