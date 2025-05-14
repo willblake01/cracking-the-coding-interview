@@ -9,7 +9,7 @@ class Stack {
 
   items: Items;
 
-  pop() {
+  remove() {
     if (this.isEmpty()) {
       return null;
     }
@@ -18,7 +18,7 @@ class Stack {
     
   }
 
-  push(item: Item) {
+  add(item: Item) {
     return this.items.push(item);
   }
 

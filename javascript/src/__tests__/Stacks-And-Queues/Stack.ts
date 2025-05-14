@@ -12,24 +12,24 @@ describe('Stack', () => {
   });
 
   test('should push an item onto the stack', () => {
-    stack.push(1);
+    stack.add(1);
     expect(stack.isEmpty()).toBe(false);
   });
 
   test('should pop an item from the stack', () => {
-    stack.push(1);
-    const poppedItem = stack.pop();
+    stack.add(1);
+    const poppedItem = stack.remove();
     expect(poppedItem).toBe(1);
     expect(stack.isEmpty()).toBe(true);
   });
 
   test('should return null when popping from an empty stack', () => {
-    const poppedItem = stack.pop();
+    const poppedItem = stack.remove();
     expect(poppedItem).toBe(null);
   });
 
   test('should peek at the top item of the stack', () => {
-    stack.push(1);
+    stack.add(1);
     const topItem = stack.peek();
     expect(topItem).toBe(1);
   });
