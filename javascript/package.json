@@ -15,7 +15,7 @@
     "typescript": "^5.1.3"
   },
   "scripts": {
-    "test": "jest CheckPermutation IsUnique OneAway PalindromePermutation Stack StringCompression StringRotation Queue URLify ZeroMatrix"
+    "test": "jest"
   },
   "type": "module"
 }

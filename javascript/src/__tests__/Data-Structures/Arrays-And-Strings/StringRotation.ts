@@ -1,4 +1,4 @@
-import stringRotation from "@code/Arrays-and-Strings/StringRotation"
+import stringRotation from "@code/Data-Structures/Arrays-and-Strings/StringRotation"
 
 test("given two strings, str1 and str2, check if str2 is a rotation of str1 using only one call to isSubstring()", () => {
     expect(stringRotation('erbottlewat', 'waterbottle')).toEqual(true);

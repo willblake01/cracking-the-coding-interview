@@ -1,0 +1,29 @@
+const rotateMatrix = () => {
+    const matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+    ];
+
+    const n = matrix.length;
+
+    // Rotate the matrix in place
+    for (let layer = 0; layer < n / 2; layer++) {
+      const first = layer;
+      const last = n - layer - 1;
+
+      for (let i = first; i < last; i++) {
+          const offset = i - first;
+          const top = matrix[first][i]; // Save top
+          // Left -> Top
+          matrix[first][i] = matrix[last - offset][first];
+          // Bottom -> Left
+          matrix[last - offset][first] = matrix[last][last - offset];
+          // Right -> Bottom
+      }
+    };
+
+  return matrix;
+}
+
+export default rotateMatrix
