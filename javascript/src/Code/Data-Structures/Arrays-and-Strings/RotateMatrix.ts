@@ -13,17 +13,20 @@ const rotateMatrix = () => {
       const last = n - layer - 1;
 
       for (let i = first; i < last; i++) {
-          const offset = i - first;
-          const top = matrix[first][i]; // Save top
-          // Left -> Top
-          matrix[first][i] = matrix[last - offset][first];
-          // Bottom -> Left
-          matrix[last - offset][first] = matrix[last][last - offset];
-          // Right -> Bottom
+        const offset = i - first;
+        const top = matrix[first][i]; // Save top
+        // Left -> Top
+        matrix[first][i] = matrix[last - offset][first];
+        // Bottom -> Left
+        matrix[last - offset][first] = matrix[last][last - offset];
+        // Right -> Bottom
+        matrix[last][last - offset] = matrix[i][last];
+        // Top -> Right
+        matrix[i][last] = top;
       }
     };
-
-  return matrix;
+    // Return the rotated matrix
+    return matrix;
 }
 
 export default rotateMatrix
