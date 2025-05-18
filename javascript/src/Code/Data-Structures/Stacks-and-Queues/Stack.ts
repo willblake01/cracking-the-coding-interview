@@ -1,4 +1,4 @@
-type Item = string | number | object | boolean | null | undefined | symbol | bigint | Function | Array<any>;
+type Item = unknown;
 
 type Items = Item[];
 
