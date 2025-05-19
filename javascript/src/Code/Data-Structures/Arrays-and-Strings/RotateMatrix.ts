@@ -1,12 +1,6 @@
 import { memoize } from '@code/utils/memoize'
 
-const rotateMatrix = memoize(() => {
-    const matrix = [
-        [1, 2, 3],
-        [4, 5, 6],
-        [7, 8, 9],
-    ];
-
+const rotateMatrix = memoize((matrix: number[][]) => {
     const n = matrix.length;
 
     // Rotate the matrix in place
