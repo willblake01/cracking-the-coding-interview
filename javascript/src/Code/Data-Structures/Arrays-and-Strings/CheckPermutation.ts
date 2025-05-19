@@ -1,3 +1,5 @@
+import { memoize } from '@code/utils/memoize'
+
 const parseString = (str: string) => {
   const result: { [key: string]: number } = {}
 
@@ -12,7 +14,7 @@ const parseString = (str: string) => {
   return result
 }
 
-const checkPermutation = (str1: string, str2: string) => {
+const checkPermutation = memoize((str1: string, str2: string) => {
   const result = {
     isPermutation: true
   }
@@ -27,6 +29,6 @@ const checkPermutation = (str1: string, str2: string) => {
   }
   
   return result.isPermutation
-}
+})
 
 export default checkPermutation

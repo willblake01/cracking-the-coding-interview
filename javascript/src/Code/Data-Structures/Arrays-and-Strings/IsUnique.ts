@@ -1,8 +1,10 @@
+import { memoize } from '@code/utils/memoize'
+
 interface Result {
   [key: string]: number | boolean
 }
 
-const isUnique = (str: string) => {
+const isUnique = memoize((str: string) => {
   const result: Result = {
     hasUniqueChars: true
   }
@@ -23,6 +25,6 @@ const isUnique = (str: string) => {
   }
 
   return result.hasUniqueChars
-}
+})
 
 export default isUnique

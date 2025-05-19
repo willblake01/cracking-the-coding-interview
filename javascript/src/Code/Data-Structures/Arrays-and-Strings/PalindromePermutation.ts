@@ -1,4 +1,6 @@
-const palindromePermutation = (str: string) => {
+import { memoize } from '@code/utils/memoize'
+
+const palindromePermutation = memoize((str: string) => {
   const charCount: { [key: string]: number } = {};
   let oddCount = 0;
 
@@ -21,6 +23,6 @@ const palindromePermutation = (str: string) => {
   }
 
   return true;
-}
+})
 
 export default palindromePermutation
