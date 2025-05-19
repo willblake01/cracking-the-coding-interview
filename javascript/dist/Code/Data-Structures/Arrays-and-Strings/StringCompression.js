@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const memoize_1 = require("@code/utils/memoize");
-const stringCompression = (0, memoize_1.memoize)((str) => {
+exports.stringCompression = void 0;
+const utils_1 = require("@code/utils");
+exports.stringCompression = (0, utils_1.memoize)((str) => {
     let count = 1;
     const returnValue = [];
     for (let i = 0; i < str.length; i++) {
@@ -15,4 +16,3 @@ const stringCompression = (0, memoize_1.memoize)((str) => {
     }
     return returnValue.join('');
 });
-exports.default = stringCompression;

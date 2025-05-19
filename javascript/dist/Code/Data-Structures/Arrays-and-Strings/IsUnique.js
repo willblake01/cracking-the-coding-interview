@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const memoize_1 = require("@code/utils/memoize");
-const isUnique = (0, memoize_1.memoize)((str) => {
+exports.isUnique = void 0;
+const utils_1 = require("@code/utils");
+exports.isUnique = (0, utils_1.memoize)((str) => {
     const result = {
         hasUniqueChars: true
     };
@@ -20,4 +21,3 @@ const isUnique = (0, memoize_1.memoize)((str) => {
     }
     return result.hasUniqueChars;
 });
-exports.default = isUnique;

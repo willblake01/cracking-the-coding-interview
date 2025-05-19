@@ -1,13 +1,10 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const LinkedList_1 = __importDefault(require("@code/Data-Structures/LinkedList"));
+const Data_Structures_1 = require("@code/Data-Structures");
 describe('LinkedList', () => {
     let linkedList;
     beforeEach(() => {
-        linkedList = new LinkedList_1.default();
+        linkedList = new Data_Structures_1.LinkedList();
     });
     it('should add items to the linked list', () => {
         linkedList.add(1);

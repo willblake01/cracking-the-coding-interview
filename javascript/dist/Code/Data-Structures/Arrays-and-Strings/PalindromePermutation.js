@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const memoize_1 = require("@code/utils/memoize");
-const palindromePermutation = (0, memoize_1.memoize)((str) => {
+exports.palindromePermutation = void 0;
+const utils_1 = require("@code/utils");
+exports.palindromePermutation = (0, utils_1.memoize)((str) => {
     const charCount = {};
     let oddCount = 0;
     // Normalize the string by removing spaces and converting to lowercase
@@ -21,4 +22,3 @@ const palindromePermutation = (0, memoize_1.memoize)((str) => {
     }
     return true;
 });
-exports.default = palindromePermutation;

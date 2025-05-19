@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const memoize_1 = require("@code/utils/memoize");
-const rotateMatrix = (0, memoize_1.memoize)((matrix) => {
+exports.rotateMatrix = void 0;
+const utils_1 = require("@code/utils");
+exports.rotateMatrix = (0, utils_1.memoize)((matrix) => {
     const n = matrix.length;
     // Rotate the matrix in place
     for (let layer = 0; layer < n / 2; layer++) {
@@ -24,4 +25,3 @@ const rotateMatrix = (0, memoize_1.memoize)((matrix) => {
     // Return the rotated matrix
     return matrix;
 });
-exports.default = rotateMatrix;

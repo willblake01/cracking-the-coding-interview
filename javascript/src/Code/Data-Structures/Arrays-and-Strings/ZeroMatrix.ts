@@ -1,7 +1,5 @@
-import { memoize } from '@code/utils/memoize'
+import { memoize } from '@code/utils'
 
-const zeroMatrix = memoize(() => {
+export const zeroMatrix = memoize(() => {
 
 })
-
-export default zeroMatrix

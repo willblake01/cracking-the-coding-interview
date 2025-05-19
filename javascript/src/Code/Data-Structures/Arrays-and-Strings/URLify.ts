@@ -1,7 +1,5 @@
-import { memoize } from '@code/utils/memoize'
+import { memoize } from '@code/utils'
 
-const URLify = memoize((str: string, len: number) => {
+export const URLify = memoize((str: string, len: number) => {
   return str.slice(0, len).split(' ').join('%20')
 })
-
-export default URLify

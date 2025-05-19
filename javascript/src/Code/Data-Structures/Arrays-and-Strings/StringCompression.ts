@@ -1,6 +1,6 @@
-import { memoize } from '@code/utils/memoize'
+import { memoize } from '@code/utils'
 
-const stringCompression = memoize((str: string) => {
+export const stringCompression = memoize((str: string) => {
   let count = 1
   const returnValue = []
 
@@ -15,5 +15,3 @@ const stringCompression = memoize((str: string) => {
 
   return returnValue.join('')
 })
-
-export default stringCompression

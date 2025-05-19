@@ -1,4 +1,4 @@
-import LinkedList from "@code/Data-Structures/LinkedList";
+import { LinkedList } from "@code/Data-Structures";
 
 describe('LinkedList', () => {
   let linkedList: LinkedList;

@@ -1,13 +1,10 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const Stack_1 = __importDefault(require("@code/Data-Structures/Stacks-and-Queues/Stack"));
+const Stacks_and_Queues_1 = require("@code/Data-Structures/Stacks-and-Queues");
 describe('Stack', () => {
     let stack;
     beforeEach(() => {
-        stack = new Stack_1.default();
+        stack = new Stacks_and_Queues_1.Stack();
     });
     test('should initialize an empty stack', () => {
         expect(stack.isEmpty()).toBe(true);

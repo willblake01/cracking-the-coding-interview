@@ -1,13 +1,10 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const Queue_1 = __importDefault(require("@code/Data-Structures/Stacks-and-Queues/Queue"));
+const Stacks_and_Queues_1 = require("@code/Data-Structures/Stacks-and-Queues");
 describe('Queue', () => {
     let queue;
     beforeEach(() => {
-        queue = new Queue_1.default();
+        queue = new Stacks_and_Queues_1.Queue();
     });
     it('should add items to the queue', () => {
         queue.add(1);

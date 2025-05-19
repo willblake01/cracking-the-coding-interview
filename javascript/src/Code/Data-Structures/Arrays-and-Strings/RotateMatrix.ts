@@ -1,6 +1,6 @@
-import { memoize } from '@code/utils/memoize'
+import { memoize } from '@code/utils'
 
-const rotateMatrix = memoize((matrix: number[][]) => {
+export const rotateMatrix = memoize((matrix: number[][]) => {
     const n = matrix.length;
 
     // Rotate the matrix in place
@@ -24,5 +24,3 @@ const rotateMatrix = memoize((matrix: number[][]) => {
     // Return the rotated matrix
     return matrix;
 })
-
-export default rotateMatrix

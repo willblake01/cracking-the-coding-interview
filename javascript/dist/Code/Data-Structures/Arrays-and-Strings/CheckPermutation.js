@@ -1,13 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const memoize_1 = require("@code/utils/memoize");
-const parseString_1 = require("@code/utils/parseString");
-const checkPermutation = (0, memoize_1.memoize)((str1, str2) => {
+exports.checkPermutation = void 0;
+const utils_1 = require("@code/utils");
+const utils_2 = require("@code/utils");
+exports.checkPermutation = (0, utils_1.memoize)((str1, str2) => {
     const result = {
         isPermutation: true
     };
-    const res1 = (0, parseString_1.parseString)(str1);
-    const res2 = (0, parseString_1.parseString)(str2);
+    const res1 = (0, utils_2.parseString)(str1);
+    const res2 = (0, utils_2.parseString)(str2);
     for (let key in res1) {
         if (res1[key] !== res2[key]) {
             result.isPermutation = false;
@@ -15,4 +16,3 @@ const checkPermutation = (0, memoize_1.memoize)((str1, str2) => {
     }
     return result.isPermutation;
 });
-exports.default = checkPermutation;
